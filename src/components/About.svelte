@@ -1,4 +1,5 @@
 <script>
+	import Button from './Button.svelte';
     let someText = 'Frontend Developer FullStack';
     let count = 0;
     let styles = { darkMode: false }
@@ -31,6 +32,16 @@
             <span>Hello DarkMode</span>
         </p>
     { /if }
+
+    <Button
+        text="Click"
+        { count }
+        on:click={ handleCount }
+    />
+    <Button
+        text="DarkMode"
+        on:click={ toggle }
+    />
 
     <button on:click={ handleCount }>
         Click { count === 0 ? '' : count }
