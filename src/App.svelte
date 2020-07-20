@@ -1,4 +1,5 @@
 <script>
+	import ButtonCount from './components/ButtonCount.svelte';
 	import Photos from './components/Photos.svelte';
 	import Input from './components/Input.svelte';
 	import About from "./components/About.svelte";
@@ -67,6 +68,7 @@
 	<Person { ...data }/>
 	<Skills/>
 	<Input/>
+	<ButtonCount/>
 	<Photos/>
 	<img src={ svelteLogo } alt="Svelte">
 </main>
