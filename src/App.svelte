@@ -1,4 +1,5 @@
 <script>
+	import Photos from './components/Photos.svelte';
 	import Input from './components/Input.svelte';
 	import About from "./components/About.svelte";
 	import Text from './components/Text.svelte';
@@ -66,5 +67,6 @@
 	<Person { ...data }/>
 	<Skills/>
 	<Input/>
+	<Photos/>
 	<img src={ svelteLogo } alt="Svelte">
 </main>
