@@ -1,18 +1,29 @@
 <script>
+	import About from "./components/About.svelte";
 	export let name;
+	export let lastname;
+	let svelteLogo = "https://arepa.s3.amazonaws.com/svelte-logo.png";
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
-
 <style>
+	:global(body) {
+		background-color: #f2f2f2;
+		color: #0084f6;
+	}
+
+	:global(:root) {
+		--theme-color: purple;
+	}
+
 	main {
 		text-align: center;
 		padding: 1em;
 		max-width: 240px;
 		margin: 0 auto;
+	}
+
+	main img {
+		width: 30%;
 	}
 
 	h1 {
@@ -28,3 +39,9 @@
 		}
 	}
 </style>
+
+<main>
+	<h1>Hola {name} { lastname }!</h1>
+	<About/>
+	<img src={ svelteLogo } alt="Svelte">
+</main>
