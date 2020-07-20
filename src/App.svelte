@@ -1,7 +1,8 @@
 <script>
 	import About from "./components/About.svelte";
 	import Text from './components/Text.svelte';
-	import Person from './components/Person.svelte';
+	import Person from './components/Person.svelte'
+	import Skills from './components/Skills.svelte';
 
 	export let name;
 	export let lastname;
@@ -62,5 +63,6 @@
 	<!-- <Person { name } { lastname } age={ data.age }/> -->
 	<!-- <Person data={ data }/> -->
 	<Person { ...data }/>
+	<Skills/>
 	<img src={ svelteLogo } alt="Svelte">
 </main>

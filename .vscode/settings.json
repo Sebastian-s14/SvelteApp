@@ -1,0 +1,11 @@
+{
+    "workbench.colorTheme": "Material Theme Darker High Contrast",
+    "workbench.colorCustomizations": {
+        "editorCursor.foreground": "#008cff",
+        "editor.selectionBackground": "#00a2ff25"
+    },
+    "editor.cursorWidth": 5,
+    "editor.cursorStyle": "line",
+    "editor.cursorBlinking": "phase",
+
+}
